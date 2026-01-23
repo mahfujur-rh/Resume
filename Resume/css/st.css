@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f3f4f6;
+    font-family: 'Poppins', sans-serif;
+    color: #1f2937;
+}
+
+/* Resume Container */
+.resume {
+    max-width: 900px;
+    margin: 40px auto;
+    background: #ffffff;
+    padding: 40px 50px;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
+}
+
+/* Header */
+.header {
+    border-bottom: 3px solid #1E4ED8;
+    padding-bottom: 16px;
+    margin-bottom: 28px;
+}
+
+.header h1 {
+    color: #1E4ED8;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.header p {
+    margin-top: 6px;
+    font-size: 13px;
+    color: #6b7280;
+}
+
+/* Sections */
+section {
+    margin-bottom: 26px;
+}
+
+section h2 {
+    color: #1E4ED8;
+    font-size: 15px;
+    font-weight: 600;
+    border-bottom: 2px solid #1E4ED8;
+    display: inline-block;
+    padding-bottom: 4px;
+    margin-bottom: 10px;
+}
+
+section p {
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+/* Work */
+.job h3 {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.job span {
+    font-size: 13px;
+    color: #6b7280;
+}
+
+ul {
+    margin-top: 8px;
+    padding-left: 18px;
+}
+
+ul li {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 5px;
+}
+
+/* Education */
+.education {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.education .date {
+    color: #6b7280;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .resume {
+        padding: 25px;
+        margin: 20px;
+    }
+
+    .header h1 {
+        font-size: 24px;
+    }
+
+    .education {
+        flex-direction: column;
+        gap: 6px;
+    }
+}
+
+/* Print Friendly */
+@media print {
+    body {
+        background: none;
+    }
+
+    .resume {
+        box-shadow: none;
+        margin: 0;
+        padding: 0;
+    }
+}
